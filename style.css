@@ -1,7 +1,20 @@
 .container{display:flex;
-flex-wrap: wrap;
 flex: 1;
-flex-direction:column;}
+flex-direction:column;
+flex-wrap:wrap;
+min-height: 1vh;
+height:400px;
+width:1200px;
+border-style:none;
+}
 
 div{border-style:solid;
-height:30px}
+height:100px;
+box-sizing:border-box;
+}
+
+#gridButton{
+    height:50px;
+    width:200px;
+    margin-bottom:10px;
+}

@@ -1,12 +1,13 @@
-let gridInput = 0;
+//setting an initial default grid to 16
+let userInput = 16;
+
 const container = document.querySelector(".container")
 const btn = document.getElementById("gridButton")
 
 btn.addEventListener("click", () => {userInput = prompt("Enter a new grid size:"), setGridSize()});
 
-
 function grid(){
-    for(let i = 0; i < gridInput; i++)
+    for(let i = 0; i < userInput; i++)
     {
         const newSquare = document.createElement("div");
         newSquare.classList.add("Square")
@@ -17,11 +18,12 @@ function grid(){
 
 function setGridSize()
 {
-    gridInput = userInput;
     if(userInput > 100)
     {
         alert("Cannot exceed 100")
     }
+    //clears the grid before processing new one
+    container.innerHTML = "";
     grid();
 }
 

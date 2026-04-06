@@ -1,16 +1,13 @@
 .container{display:flex;
-flex: 1;
-flex-direction:column;
 flex-wrap:wrap;
-min-height: 1vh;
-height:400px;
 width:1200px;
 border-style:none;
 }
 
 div{border-style:solid;
-height:100px;
 box-sizing:border-box;
+height:100px;
+width: 100px;
 }
 
 #gridButton{
